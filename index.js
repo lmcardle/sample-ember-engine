@@ -1,6 +1,9 @@
 /* jshint node: true */
 'use strict';
 
-module.exports = {
-  name: 'sample-engine'
-};
+const EngineAddon = require('ember-engines/lib/engine-addon');
+
+module.exports = EngineAddon.extend({
+  name: 'sample-engine',
+  lazyLoading: false
+});
